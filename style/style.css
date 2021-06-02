@@ -1,0 +1,509 @@
+/************************************
+      GALVENIE LAPAS PARAMETRI
+************************************/
+
+body {
+    background: #dddfe4;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-wrapper {
+    display: grid;
+    /* Lapas režģis 10 rūtiņu platumā */
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 auto 0 auto;
+}
+
+/* ******index.php****** */
+
+/* autentifikācijas konteineris */
+
+.authentication {
+    grid-row: 2/5;
+    grid-column: 6;
+}
+
+/* Autentifikācijas formas konteineris */
+
+.authentication-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 500px;
+    border-radius: 30px;
+    background: #dddfe4;
+    box-shadow: 20px 20px 60px #bcbec2, -20px -20px 60px #feffff;
+}
+
+/* Autentifikācijas formā esošais PRK logo */
+
+.authentication-form img {
+    width: 150px;
+    height: 80px;
+}
+
+.authentication-form h2 {
+    font-weight: bolder;
+}
+
+.authentication-form input {
+    border-radius: 5px;
+    background: #dddfe4;
+    box-shadow: inset 2px 2px 4px #bec0c4, inset -2px -2px 4px #fcfeff;
+    width: 80%;
+    border-style: none;
+    padding: 2px;
+    margin: 10px;
+    height: 25px;
+    opacity: 0.8
+}
+
+/* .authentication-form input placeholder */
+
+::placeholder {
+    opacity: 1;
+    padding-left: 5px;
+}
+
+/* Autentifikācijas formas URL konteineris */
+
+.url {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Saite pēc noklusējuma */
+
+.url a {
+    text-decoration: none;
+    color: #3676C4;
+    display: flex;
+    margin: 30px 30px 10px 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Saite, kad uzlikts kursors */
+
+.url a:hover {
+    color: #73aef5;
+}
+
+/* Autentifikācijas lapas pogas parametri */
+
+.authentication-form button {
+    margin: 20px 10px;
+    border-radius: 9px;
+    background: #dddfe4;
+    box-shadow: 3px 3px 5px #bec0c4, -3px -3px 5px #fcfeff;
+    width: 50%;
+    height: 30px;
+    border-style: none;
+}
+
+/* Autentifikācijas lapas pogas parametri, kad uzvilkts kursors */
+
+.authentication-form button:hover {
+    margin: 20px 10px;
+    background: #dddfe4;
+    border-radius: 9px;
+    box-shadow: inset 3px 3px 5px #bec0c4, inset -3px -3px 5px #fcfeff;
+    width: 50%;
+    height: 30px;
+    border-style: none;
+    color: gray;
+}
+
+/* *******success.php********* */
+
+/* Veiksmīgas reģistrācijas paziņojuma konteineris */
+
+.notification {
+    grid-row: 2/5;
+    grid-column: 6;
+    border-radius: 30px;
+    background: #dddfe4;
+    box-shadow: 20px 20px 60px #bcbec2, -20px -20px 60px #feffff;
+    width: 500px;
+    text-align: center;
+}
+
+.notification h2 {
+    color: #3676C4;
+    margin: 20px 10px 20px 10px;
+}
+
+.notification h3 {
+    color: #3676C4;
+    margin: 0px 15px;
+}
+
+.notification img {
+    width: 110px;
+    height: 60px;
+    margin: 10px;
+}
+
+.notification form input {
+    margin: 5% 25% 2% 25%;
+    border-radius: 9px;
+    background: #dddfe4;
+    box-shadow: 3px 3px 5px #bec0c4, -3px -3px 5px #fcfeff;
+    width: 50%;
+    height: 30px;
+    border-style: none;
+}
+
+.notification form input:hover {
+    background: #dddfe4;
+    border-radius: 9px;
+    box-shadow: inset 3px 3px 5px #bec0c4, inset -3px -3px 5px #fcfeff;
+    width: 50%;
+    height: 30px;
+    border-style: none;
+    color: gray;
+}
+
+/* ******register.php************ */
+
+.registration {
+    grid-row: 1/8;
+    grid-column: 6;
+}
+
+/* Reģistrācijas formas konteineris */
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 99%;
+    border-radius: 30px;
+    background: #dddfe4;
+    box-shadow: 20px 20px 60px #bcbec2, -20px -20px 60px #feffff;
+}
+
+/* Reģistrācijas formas PRK logo */
+
+.registration-form img {
+    width: 150px;
+    height: 80px;
+    margin: 0% 35% 1% 35%;
+}
+
+.registration-form label {
+    margin: 5px 0px 2px 20px;
+    display: flex;
+    float: left;
+}
+
+.registration-form input {
+    border-radius: 5px;
+    background: #dddfe4;
+    box-shadow: inset 2px 2px 4px #bec0c4, inset -2px -2px 4px #fcfeff;
+    width: 90%;
+    border-style: none;
+    padding: 2px;
+    margin: 0px 0px 5px 20px;
+    height: 25px;
+    opacity: 0.8
+}
+
+.registration-form h1 {
+    margin: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.registration-form h2 {
+    margin: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.registration-form hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0px 0px;
+    padding: 0;
+}
+
+.registration-form button {
+    /* justify-content: center; */
+    margin: 5% 25% 2% 25%;
+    border-radius: 9px;
+    background: #dddfe4;
+    box-shadow: 3px 3px 5px #bec0c4, -3px -3px 5px #fcfeff;
+    width: 50%;
+    height: 30px;
+    border-style: none;
+}
+
+.registration-form button:hover {
+    background: #dddfe4;
+    border-radius: 9px;
+    box-shadow: inset 3px 3px 5px #bec0c4, inset -3px -3px 5px #fcfeff;
+    width: 50%;
+    height: 30px;
+    border-style: none;
+    color: gray;
+}
+
+/* Reģistrācijas formas saite atpakaļ uz autentifikāciju */
+
+.registration-form a {
+    justify-content: center;
+    text-decoration: none;
+    color: #3676C4;
+    display: flex;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.registration-form a:hover {
+    color: #73aef5;
+}
+
+/* ******Visas apmeklējamās lapas************ */
+
+/* Slīdošā izvēlne */
+
+nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #d5d8df;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/* PRK logo iekš slīdošās izēlnes */
+
+nav img {
+    width: 110px;
+    height: 60px;
+    padding: 8px 8px 8px 32px;
+}
+
+/* Aizvēršanas pogas krāsa */
+
+#close {
+    color: black;
+}
+
+/* Aizvēršanas pogas krāsa, kad uzvilkts kursors*/
+
+#close:hover {
+    color: gray;
+}
+
+/* Navigācijas saites */
+
+nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3676C4;
+    display: block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #73aef5;
+}
+
+/* Navigācijas X krusta fiziskie parametri  */
+
+nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .nav {
+        padding-top: 15px;
+    }
+    .nav a {
+        font-size: 18px;
+    }
+}
+
+/* Galvenes sadaļa visām lapām */
+
+header {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column: 1/12;
+    height: fit-content;
+}
+
+/* Visi h1 būs gaiši zilā krāsā */
+
+h1 {
+    color: #3676C4;
+    margin: 0px 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #3676C4;
+    margin: 0px 10px;
+    font-size: 30px;
+}
+
+/* Lietotāju profila konteineris augšā pa kreisi */
+
+.header-menu {
+    font-size: 35px;
+    cursor: pointer;
+    margin: 0px 10px;
+    color: gray;
+    font-weight: bold;
+    float: left;
+}
+
+.header-profile {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Saites iekš lietotāju profiliem, padarīt pelēkā krāsā */
+
+.header-profile a {
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+}
+
+/* Uzvelkot kursoru paliek melni */
+
+.header-profile a:hover {
+    color: black;
+}
+
+/* Satura sadaļa ar "iespiestu" neumorfisma stilu */
+
+main {
+    grid-row: 2/8;
+    grid-column: 1/12;
+    border-radius: 11px;
+    background: #dddfe4;
+    box-shadow: inset 12px 12px 24px #cecfd4, inset -12px -12px 24px #eceff4;
+}
+
+/* ********profile.php********** */
+
+/* Profila sadaļas konteineris */
+
+.main-profile-container {
+    grid-row: 2/8;
+    grid-column: 2/12;
+    position: relative;
+}
+
+/* Apaļa profila bilde */
+
+.main-profile-picture {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #dddfe4;
+    box-shadow: 3px 3px 5px #bec0c4, -3px -3px 5px #fcfeff;
+    z-index: 0;
+    position: absolute;
+}
+
+/* Profila bildes placeholderis */
+
+.main-profile-picture img {
+    opacity: 0.7;
+    width: 60px;
+    height: 60px;
+}
+
+/* Lietotāj informācija */
+
+.main-profile-title {
+    margin: 4% 0% 0% 4%;
+    padding: 2% 2% 2% 10%;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 5%;
+    background: #dddfe4;
+    box-shadow: 3px 3px 5px #bec0c4, -3px -3px 5px #fcfeff;
+}
+
+.main-profile-title p {
+    margin: 0px 10px;
+    font-weight: bold;
+}
+
+.main-profile-information input {
+    border-radius: 5px;
+    background: #dddfe4;
+    box-shadow: inset 2px 2px 4px #bec0c4, inset -2px -2px 4px #fcfeff;
+    width: 20%;
+    border-style: none;
+    padding: 2px;
+    margin: 10px;
+    height: 25px;
+    opacity: 0.8
+}
+
+.main-profile-information label {
+    margin: 1% 10% 1% 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ******recover.php******** */
+
+/* Konteineris priekš kļūdas paziņojuma pašā lapas vidū */
+
+.page-error {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/8;
+    grid-column: 6;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+}
+
+/* Poga atpakaļ uz autentifikāciju */
+
+.page-error a {
+    text-decoration: none;
+    color: #3676C4;
+    display: flex;
+    margin: 30px 30px 10px 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.page-error a:hover {
+    color: #73aef5;
+}
